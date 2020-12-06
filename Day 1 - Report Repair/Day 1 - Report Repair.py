@@ -4,19 +4,15 @@ import numpy
 
 
 with open("./input.txt") as f:
-    INPUT = f.readlines()
+    lines = [int(x) for x in f.readlines()]
 
-lines = [int(x) for x in INPUT]
-
-
-for r in itertools.product(lines, lines):
-    if sum(r) == 2020:
-        print numpy.prod(r)
+for p in itertools.product(lines, lines):
+    if sum(p) == 2020:
+        print numpy.prod(p)
         break
 
-lines = [int(x) for x in INPUT]
-for r in itertools.product(lines, lines, lines):
-    if sum(r) == 2020:
-        print numpy.prod(r)
+for p in itertools.product(lines, lines, lines):
+    if sum(p) == 2020:
+        print numpy.prod(p)
         break
 
