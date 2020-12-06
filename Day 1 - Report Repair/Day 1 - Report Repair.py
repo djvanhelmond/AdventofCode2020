@@ -4,7 +4,7 @@ import numpy
 
 
 with open("./input.txt") as f:
-    lines = [int(x) for x in f.readlines()]
+    lines = [int(x) for x in f.read().splitlines()]
 
 for p in itertools.product(lines, lines):
     if sum(p) == 2020:
