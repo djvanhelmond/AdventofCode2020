@@ -1,7 +1,4 @@
 #!/usr/local/bin/python3
-import itertools
-import numpy
-
 
 with open("./input.txt") as f:
     lines = [x.split(":") for x in f.read().splitlines()]
