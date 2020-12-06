@@ -65,7 +65,7 @@ def hgt_valid(passport):
             return True
     return False
 
-def hcl_valid(passport): #TODO
+def hcl_valid(passport):
     valid = True
     if passport['hcl'][0] != "#":
         print passport['hcl']
